@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fff5e2;
+
+}
+
+/* ******************* header */
+header{
+    background-color: #fdbb40;
+}
+header h1{
+    width: 90%;
+    margin: auto;
+    padding: 30px 0;
+}
+
+/* ******************* Main */
+main{
+    background-color: white;
+    width: 50vw;
+}
+main .main_box{
+    width: 90%;
+    margin: auto;
+}
+main ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+        border: pink 1px solid ;
+}
+main ul li {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+    width:250px;
+        /* border: olive 1px solid ; */
+}
+main ul li * {
+    /* border: blue 1px solid ; */
+}
+/* ******************* Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #d33359;
+    padding: 50px 0;
+}
+footer .price_total {
+    width: 90%;
+    margin: auto;
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+img{
+    width: 50px;
+}
