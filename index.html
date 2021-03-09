@@ -23,8 +23,8 @@
     
     <main>
         <div class="main_box">            
-            <label for="burger_name">Mio Nome </label>
-            <input type="text" id="fname" name="fname">            <h3>Ingredients</h3>
+            <input type="text" id="burger_name" name="burger_name" placeholder="Name your burger">            
+            <h3>Ingredients</h3>
             <div class="box_ingredients">
                 <ul>
                     <li>
@@ -35,7 +35,7 @@
                             <p>Cheese</p>
                         </div>
                         <div class="box_ingr_status">
-                            <input type="checkbox" id="cheese" name="ingr_cheese" value="4">
+                            <input type="checkbox" id="cheese" name="ingr_cheese" class ="add_ingredients" value="4">
                             <label for="vehicle1"> add </label> <br>
                         </div>
                     </li>
@@ -47,7 +47,7 @@
                             <p>Tomato</p>
                         </div>
                         <div class="box_ingr_status">
-                            <input id = "tomato" class = "" type="checkbox" value="4">
+                            <input id = "tomato" class ="add_ingredients" type="checkbox" value="4">
                             <label for="vehicle1"> add </label> <br>
                         </div>
                     </li>
@@ -59,7 +59,7 @@
                             <p>Eggs</p>
                         </div>
                         <div class="box_ingr_status">
-                            <input id = "eggs" class = "img_ingr" type="checkbox" value="5">
+                            <input id = "eggs" class = "img_ingr" type="checkbox" class ="add_ingredients" value="5">
                             <label for="vehicle1"> add </label> <br>
                         </div>
                     </li>
@@ -71,7 +71,7 @@
                             <p>Lettuce</p>
                         </div>
                         <div class="box_ingr_status">
-                            <input id = "lettuce" class = "" type="checkbox" value="2">
+                            <input id = "lettuce" class ="add_ingredients" type="checkbox" value="2">
                             <label for="lettuce"> add </label> <br>
                         </div>
                     </li>
@@ -83,7 +83,7 @@
                             <p>Mustard</p>
                         </div>
                         <div class="box_ingr_status">
-                            <input id = "mustard" class = "" type="checkbox" value="4">
+                            <input id = "mustard" class ="add_ingredients" type="checkbox" value="4">
                             <label for="mustard"> add </label> <br>
                         </div>
                     </li>
@@ -95,7 +95,7 @@
                             <p>Ketchup</p>
                         </div>
                         <div class="box_ingr_status">
-                            <input id = "ketchup" class = "" type="checkbox" value="1">
+                            <input id = "ketchup" class ="add_ingredients" type="checkbox" value="1">
                             <label for="ketchup"> add </label> <br>
                         </div>
                     </li>
@@ -103,15 +103,15 @@
             </div>
             <div class="discount_section">
                 <label for="discount"> Discount Coupon: </label>
-                <input type="text" id="discount" name="discount">            
+                <input type="text" id="discount" name="discount" placeholder="12354ABCDEF">            
             </div>
-            <button id = "enter_menu" class="btn_end">Calculate</button>
+            <input type="submit" id ="calculate" class="btn_end" value="Calculate">
         </div>
     </main>
     <footer>
         <div class="price_total">
             <p>Your Price</p>
-            <p id ="your_price">polpettee</p>
+            <p id ="price">SOLDI€</p>
         </div>
     </footer>
 

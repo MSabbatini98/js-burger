@@ -5,7 +5,8 @@
 }
 body{
     background-color: #fff5e2;
-
+    font-size: larger;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* ******************* header */
@@ -17,42 +18,95 @@ header h1{
     margin: auto;
     padding: 30px 0;
 }
-
+header .img_logo{
+    position: fixed;
+    top: 70px;
+    right: 50vw;
+    transform: scale(4);
+}
 /* ******************* Main */
 main{
     background-color: white;
     width: 50vw;
+    height: 100vh;
 }
 main .main_box{
     width: 90%;
     margin: auto;
 }
+input[type=text] {
+    width: 100%;
+    font-size: larger;
+    padding: 15px 23px 15px 0;
+    margin: 15px 0;
+    display: inline-block;
+    border: none;
+}
+
 main ul {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-        border: pink 1px solid ;
+        /* border: pink 1px solid ; */
 }
 main ul li {
     list-style: none;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    padding: 15px 75px 5px 0px;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 20px;
-    width:250px;
+    width:300px;
         /* border: olive 1px solid ; */
 }
 main ul li * {
     /* border: blue 1px solid ; */
 }
+
+/* ! discount section  with button */
+main .discount_section {
+    margin: 15px 0;
+}
+main .discount_section label {
+    display: inline-block;
+    font-size: 15px;
+    padding: 10px;
+    font-weight: bold;
+        /* border: orange solid 3px; */
+}
+main .discount_section input{
+    background-color: #fff5e2;
+    border-radius: 5px;
+    width: calc(50vw - 230px);
+    height: 25px;
+    line-height: 20px;
+    font-size: 12px;
+    padding-left: 10px;
+        /* border: blueviolet solid 3px; */
+}
+
+input[type=submit] {
+    display: block;
+    background-color: #fdbb40;
+    padding: 10px 15px;
+    margin: auto;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type=submit]:hover {
+    transform: scale(2);
+}
+
 /* ******************* Footer */
 footer {
     position: fixed;
     bottom: 0;
     left: 0;
-    right: 0;
+    width: 50vw;
     background-color: #d33359;
     padding: 50px 0;
 }
